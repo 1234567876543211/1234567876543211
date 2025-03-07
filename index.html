@@ -3,24 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Min Webbsida</title>
+  <link rel="stylesheet" href="style1.css"> <!-- Länkar till en extern CSS-fil för att styla sidan -->
+  <title>Tjänster</title>
 </head>
-<body style="background: url('bakbilde.png') no-repeat center center fixed; background-size: cover; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;">
-
-  <header style="width: 100%; display: flex; flex-direction: column; align-items: center; padding: 20px 0;">
+<body>
+  <header>
+    <!-- Sidhuvud som innehåller logotypen och navigeringsmenyn -->
     <div class="logo">
-      <img src="Hitek as logo.png" alt="Logo" style="max-width: 150px;">
+      <img style="height: 110px; width: auto;"  src="Hitek as logo.png" alt="Logo">
     </div>
+    <nav>
+      <!-- Navigeringsmeny med länkar till olika sidor på webbplatsen -->
+      <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="about.html">Om oss</a></li>
+        <li><a href="services.html">Tjänster</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="hero">
-    <div style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; margin-top: 20px;">
+  <section id="services" style="display: flex; justify-content: center; align-items: center; height: 100vh; background: url('{FBF896EA-239C-4371-8E01-3BAA10E1FB5E}.png') no-repeat center center/cover; text-align: center; color: white; padding-top: 60px;">
+    <div style="background: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 10px;">
       <h1>Välkommen till vår webbsida</h1>
       <p>Vi erbjuder de bästa tjänsterna för dig.</p>
       <a href="services.html" style="display: inline-block; background: orange; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px;">Läs mer</a>
     </div>
   </section>
 
+  <footer>
+    <!-- Sidfot som visar copyright-information -->
+    <p>&copy; 2025 Min Webbsida. Alla rättigheter förbehållna.</p>
+  </footer>
 </body>
 </html>
-
