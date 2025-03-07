@@ -1,5 +1,5 @@
 /* Generell styling */
-body {
+body { /* Grundläggande stil för hela sidan */
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@ body {
 }
 
 /* Navigationsbar */
-header {
+header { /* Stilar för toppmenyn */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,14 +24,14 @@ header {
 }
 
 /* Logo */
-.logo img {
-  height: 50px; 
-  width: auto; 
+.logo img { /* Anpassar logotypens storlek */
+  height: 50px;
+  width: auto;
   display: block;
 }
 
 /* Navigationsmeny */
-nav ul {
+nav ul { /* Menylistan */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -39,11 +39,7 @@ nav ul {
   gap: 30px;
 }
 
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
+nav ul li a { /* Stil för menyknappar */
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -56,209 +52,7 @@ nav ul li a:hover {
 }
 
 /* Hero-sektion */
-.hero {
-  height: 100vh;
-  background: url('viggo\ bilde.png') no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
-}
-
-.hero-content {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 600px;
-}
-
-.hero h1 {
-  font-size: 50px;
-  margin: 0;
-}
-
-.hero p {
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 25px;
-  background-color: #ff6600;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #e65c00;
-}
-
-/* Kjøpsguide */
-.guide-section {
-  padding: 50px;
-  text-align: center;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
-  text-align: center;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.card h3 {
-  margin: 10px 0;
-}
-
-.card p {
-  font-size: 16px;
-  color: #666;
-}
-
-/* Sektioner */
-section {
-  justify-self: center;
-  padding: 50px;
-  text-align: center;
-  max-width: 900px;
-  width: 60%;
-  margin: 0 auto;
-}
-
-#about, #contact {
-  background: white;
-  margin: 20px;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 15px;
-  background: black;
-  color: white;
-}
-
-/* Styling för tjänster */
-.service-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
-.service-box {
-  position: relative;
-  width: 320px;
-}
-
-.image-wrapper {
-  position: relative;
-  width: 100%;
-}
-
-.image-wrapper img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-}
-
-/* Mörkgrå ruta inne på bilden */
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(50, 50, 50, 0.8);
-  color: white;
-  text-align: center;
-  padding: 15px;
-  border-radius: 0 0 10px 10px;
-}
-/* Generell styling */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-/* Navigationsbar */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #222;
-  padding: 10px 20px;
-  position: absolute;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Logo */
-.logo img {
-  height: 50px; 
-  width: auto; 
-  display: block;
-}
-
-/* Navigationsmeny */
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 30px;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px 15px;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #ff6600;
-}
-
-/* Hero-sektion */
-.hero {
+.hero { /* Stora sektionen högst upp */
   height: 100vh;
   background: url('hero.jpg') no-repeat center center/cover;
   display: flex;
@@ -269,24 +63,14 @@ nav ul li a:hover {
   padding: 20px;
 }
 
-.hero-content {
+.hero-content { /* Innehållet i hero-sektionen */
   background: rgba(0, 0, 0, 0.6);
   padding: 30px;
   border-radius: 10px;
   max-width: 600px;
 }
 
-.hero h1 {
-  font-size: 50px;
-  margin: 0;
-}
-
-.hero p {
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-.btn {
+.btn { /* Stil för knappar */
   display: inline-block;
   margin-top: 15px;
   padding: 12px 25px;
@@ -303,12 +87,12 @@ nav ul li a:hover {
 }
 
 /* Kjøpsguide */
-.guide-section {
+.guide-section { /* Sektion för köpsguide */
   padding: 50px;
   text-align: center;
 }
 
-.cards {
+.cards { /* Container för kort */
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -316,7 +100,7 @@ nav ul li a:hover {
   margin-top: 20px;
 }
 
-.card {
+.card { /* Stil för varje kort */
   background: white;
   padding: 20px;
   border-radius: 10px;
@@ -330,17 +114,8 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-.card h3 {
-  margin: 10px 0;
-}
-
-.card p {
-  font-size: 16px;
-  color: #666;
-}
-
 /* Sektioner */
-section {
+section { /* Anpassning av vanliga sektioner */
   justify-self: center;
   padding: 50px;
   text-align: center;
@@ -349,7 +124,7 @@ section {
   margin: 0 auto;
 }
 
-#about, #contact {
+#about, #contact { /* Stil för Om oss och Kontakt */
   background: white;
   margin: 20px;
   padding: 40px;
@@ -358,7 +133,7 @@ section {
 }
 
 /* Footer */
-footer {
+footer { /* Sidfot */
   text-align: center;
   padding: 15px;
   background: black;
@@ -366,7 +141,7 @@ footer {
 }
 
 /* Styling för tjänster */
-.service-container {
+.service-container { /* Layout för tjänster */
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -374,7 +149,7 @@ footer {
   margin-top: 40px;
 }
 
-.service-box {
+.service-box { /* Varje tjänstebox */
   position: relative;
   width: 320px;
 }
@@ -391,7 +166,7 @@ footer {
 }
 
 /* Mörkgrå ruta inne på bilden */
-.overlay {
+.overlay { /* Halvtransparent textfält över bilder */
   position: absolute;
   bottom: 0;
   left: 0;
